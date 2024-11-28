@@ -1,0 +1,89 @@
+.tile {
+  background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  max-width: 300px;
+  width: 100%;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tile-text {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+  min-height: 50px;
+}
+
+.tile-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #3498db;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.tile-input:focus {
+  border-color: #2980b9;
+}
+
+.tile-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.more-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.more-link:hover {
+  color: #2980b9;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #2980b9;
+}
+
+.btn-save {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #27ae60;
+} 

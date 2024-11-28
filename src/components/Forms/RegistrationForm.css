@@ -1,0 +1,162 @@
+.registration-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .registration-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    }
+    .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    }
+    .form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    }
+    .form-group {
+    flex: 1;
+    min-width: 250px;
+    }
+    .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+    }
+    .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+    }
+    .form-group input.error,
+    .form-group select.error,
+    .form-group textarea.error {
+    border-color: #ff3d3d;
+    }
+    .error-message {
+    color: #ff3d3d;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+    }
+    .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    }
+    .checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+    }
+    .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    }
+    .submit-button:hover {
+    background-color: #45a049;
+    }
+    .success-message {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 1.25rem;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    }
+    @media (max-width: 768px) {
+    .registration-container {
+    margin: 1rem;
+    padding: 1rem;
+    }
+    .form-group {
+    min-width: 100%;
+    }
+    .form-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    }
+    }
+    .loading-message {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: #1976d2;
+    }
+    .error-banner {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffebee;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: #c62828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    }
+    .retry-button {
+    background-color: #c62828;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    }
+    .retry-button:hover {
+    background-color: #b71c1c;
+    }
+    .submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    }
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+    .submit-button:disabled::after {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    }
+    
